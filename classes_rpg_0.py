@@ -71,3 +71,5 @@ class Zombie(Character):
     
     def print_status(self):
         print(f"""{self.name}'s health: {self.health}, \n{self.name}'s power: {self.power}""")
+
+
