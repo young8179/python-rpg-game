@@ -1,5 +1,5 @@
 
-class Character(Hero, Goblin):
+class Character:
     def is_alive(self):
         if self.health > 0:
             return True
@@ -8,7 +8,7 @@ class Character(Hero, Goblin):
   
 
 
-class Hero:
+class Hero(Character):
     
     
     def __init__(self, name, health, power):
@@ -28,7 +28,7 @@ class Hero:
         print(f"""{self.name}'s health: {self.health}, \n{self.name}'s power: {self.power}\n""")
 
 
-class Goblin:
+class Goblin(Character):
     
     
     def __init__(self, name, health, power):
