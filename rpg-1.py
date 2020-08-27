@@ -7,8 +7,8 @@ In this simple RPG game, the hero fights the goblin. He has the options to:
 
 """
 
-from classes_rpg_0 import Hero, Goblin, Zombie, Character
-
+from classes_rpg_1 import Hero, Goblin, Zombie, Character
+from classes_rpg import Character
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
         print("1. fight goblin")
         print("2. do nothing")
         print("3. flee")
-        
+        print("4. summon friend")
         print("> ",)
         user_input = input()
         if user_input == "1":
@@ -41,7 +41,11 @@ def main():
             print("Goodbye.")
             break
         
-        
+        elif user_input == "4":
+            summon_pick = int(input("Which friends do you want to summon?"))
+            print("1. Medic\n2. Shadow\n3. magic")
+            if summon_pick == "1": 
+                #--------continue coding(start with making class for char)--------- 
         else:
             print("Invalid input %r" % user_input)
         
